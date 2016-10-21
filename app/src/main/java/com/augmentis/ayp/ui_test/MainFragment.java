@@ -40,26 +40,20 @@ public class MainFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.activity_main, container, false);
-        backgroundImage = (ImageView) v.findViewById(R.id.background_image);
-        welcomeText = (ImageView) v.findViewById(R.id.welcome_text);
-        gettingStartButton = (Button) v.findViewById(R.id.getting_start_button);
-
-        backgroundImage.setBackground(getResources().getDrawable(R.drawable.slidein));
-        welcomeText.setBackground(getResources().getDrawable(R.drawable.welcome));
-        gettingStartButton.setBackground(getResources().getDrawable(R.drawable.gettingstartbutton));
-        gettingStartButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                welcomeAnimate(welcomeText);
-
-            }
-        });
-
-//        welcomeAnimate(welcomeText);
-
-
-
+        View v = inflater.inflate(R.layout.time_setting_fragment, container, false);
+//        backgroundImage = (ImageView) v.findViewById(R.id.background_image);
+//        welcomeText = (ImageView) v.findViewById(R.id.welcome_text);
+//        gettingStartButton = (Button) v.findViewById(R.id.getting_start_button);
+//
+//        backgroundImage.setBackground(getResources().getDrawable(R.drawable.slidein));
+//        welcomeText.setBackground(getResources().getDrawable(R.drawable.welcome));
+//        gettingStartButton.setBackground(getResources().getDrawable(R.drawable.gettingstartbutton));
+//        gettingStartButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//            }
+//        });
         return v;
     }
 
@@ -73,6 +67,6 @@ public class MainFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        welcomeText.animate().translationY(0).setDuration(3000).start();
+//        welcomeText.animate().translationY(0).setDuration(3000).start();
     }
 }

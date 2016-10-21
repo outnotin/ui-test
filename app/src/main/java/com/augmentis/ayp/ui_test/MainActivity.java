@@ -10,7 +10,7 @@ public class MainActivity extends SingleFragmentActivity{
 
     @Override
     protected Fragment onCreateFragment() {
-        return MainFragment.newInstance();
+        return SecondFragment.newInstance();
     }
 
     public static Intent newIntent(Context context){
